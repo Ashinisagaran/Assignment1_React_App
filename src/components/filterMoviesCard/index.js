@@ -83,21 +83,6 @@ export default function FilterMoviesCard(props) {
             })}
           </Select>
         </FormControl>
-        {/* <FormControl className={classes.formControl}>
-          <InputLabel id="productionCountries-label">Genre</InputLabel>
-          <Select
-            labelId="productionCountries-label"
-            id="productionCountries-select"
-          >
-            {production_companies.map((productionCountries) => {
-              return (
-                <MenuItem key={productionCountries.iso_3166_1} value={productionCountries.iso_3166_1}>
-                  {productionCountries.name}
-                </MenuItem>
-              );
-            })}
-          </Select>
-        </FormControl> */}
       </CardContent>
       <CardMedia
         className={classes.media}
