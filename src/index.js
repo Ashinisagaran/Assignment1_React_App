@@ -7,8 +7,10 @@ import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
 import UpcomingMoviesPage from "./pages/upcomingMoviesPage";
 import SiteHeader from './components/siteHeader';
+import MoviesContextProvider from "./contexts/moviesContext";
 import { QueryClientProvider, QueryClient } from "react-query";
 import { ReactQueryDevtools } from 'react-query/devtools'
+
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -21,12 +23,15 @@ const queryClient = new QueryClient({
 });
 
 
+
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-          <SiteHeader />      {/* New Header  */}
-          <Switch>
+        <SiteHeader />
+        <MoviesContextProvider>
+            {" "}
+            <Switch>
         <Route path="/reviews/:id" component={MovieReviewPage} />
         <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
         <Route exact path="/movies/upcoming" component={UpcomingMoviesPage} />
@@ -34,6 +39,7 @@ const App = () => {
         <Route exact path="/" component={HomePage} />
         <Redirect from="*" to="/" />
       </Switch>
+      </MoviesContextProvider>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
