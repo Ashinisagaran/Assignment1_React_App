@@ -30,10 +30,17 @@ const useStyles = makeStyles((theme) => ({
 export default function FilterMoviesCard(props) {
   const classes = useStyles();
   const [genres, setGenres] = useState([{ id: '0', name: "All" }])
+  //const [genres, setGenres] = useState([])
+
+
 
   useEffect(() => {
-    getGenres().then((allGenres) => {
-      setGenres([genres[0], ...allGenres]);
+    getGenres().then(allGenres => {
+      console.log("Hello");
+      console.log(genres);
+    // setGenres([genres[0], ...allGenres]);
+     setGenres(allGenres);
+    // console.log(genres);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
