@@ -27,9 +27,11 @@ const Header = ({ title, history }) => {
       <Typography variant="h4" component="h3">
         {title}
       </Typography>
+
       <IconButton aria-label="go forward" onClick={() => history.goForward()}>
         <ArrowForwardIcon color="primary" fontSize="large" />
       </IconButton>
+
     </Paper>
   );
 };
