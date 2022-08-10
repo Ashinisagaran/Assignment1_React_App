@@ -18,8 +18,8 @@ const UpcomingMoviesPage = (props) => {
       const movies = data.results;
 
       // Redundant, but necessary to avoid app crashing.
-      const playlists = movies.filter(m => m.playlists)
-      localStorage.setItem('playlist', JSON.stringify(playlists))
+      // const playlists = movies.filter(m => m.playlists)
+      // localStorage.setItem('playlist', JSON.stringify(playlists))
     //  const AddToPlaylistIcon = (movieId) => true 
     
       return (
@@ -38,3 +38,4 @@ const UpcomingMoviesPage = (props) => {
     };
 
 export default UpcomingMoviesPage;
+

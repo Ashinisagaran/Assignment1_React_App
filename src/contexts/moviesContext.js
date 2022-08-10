@@ -31,8 +31,10 @@ const MoviesContextProvider = (props) => {
     let newPlaylist = [];
     if (!playlist.includes(movie.id)){
       newPlaylist = [...playlist, movie.id];
+      setPlaylist(newPlaylist)
     }
-    setPlaylist(newPlaylist)
+    
+    // console.log(playlist);
   };
 
 //   return (
@@ -52,6 +54,7 @@ return (
   <MoviesContext.Provider
     value={{
       favorites,
+      playlist,
       addToFavorites,
       removeFromFavorites,
       addReview,
