@@ -41,6 +41,7 @@ export default function MovieCard({ movie, action }) {
   };
 
 
+
   return (
     <Card className={classes.card}>
       <CardHeader

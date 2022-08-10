@@ -84,6 +84,7 @@ const ReviewForm = ({ movie, history }) => {
     context.addReview(movie, review);
     setOpen(true);   // NEW
   };
+
   return (
     <Box component="div" className={classes.root}>
       <Typography component="h2" variant="h3">
