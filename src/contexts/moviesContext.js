@@ -37,19 +37,6 @@ const MoviesContextProvider = (props) => {
     // console.log(playlist);
   };
 
-//   return (
-//     <MoviesContext.Provider
-//       value={{
-//         favorites,
-//         addToFavorites,
-//         removeFromFavorites
-//       }}
-//     >
-//       {props.children}
-//     </MoviesContext.Provider>
-//   );
-// };
-
 return (
   <MoviesContext.Provider
     value={{

@@ -9,8 +9,8 @@ import AddToPlaylistIcon from "../components/cardIcons/playlistAdd";
 
 const RecommendationsPage = (props) => {
   const { id } = props.match.params;
-  console.log("Hello");
-  console.log(id);
+  // console.log("Hello");
+  // console.log(id);
   const {  data, error, isLoading, isError }  = useQuery(["recommendations",  { id: id }],getRecommendations);
 
   if (isLoading) {
