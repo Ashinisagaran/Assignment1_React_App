@@ -4,12 +4,18 @@ import Paper from "@material-ui/core/Paper";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import MonetizationIcon from "@material-ui/icons/MonetizationOn";
 import StarRate from "@material-ui/icons/StarRate";
+import Button from "@material-ui/core/Button";
+import MovieIcon from "@material-ui/icons/Movie";
+import GroupIcon from "@material-ui/icons/Group";
 import NavigationIcon from "@material-ui/icons/Navigation";
 import Fab from "@material-ui/core/Fab";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import MovieReviews from "../movieReviews"
+import MovieReviews from "../movieReviews";
+import { Link } from "react-router-dom";
+// import RecommendationsPage from "../pages/recommendationsPage";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -69,6 +75,9 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
       </Paper>
 
       <Paper component="ul" className={classes.root}>
+        <Button variant="outlined" startIcon={<GroupIcon />} color="secondary">
+          Movie Cast
+        </Button>
         <li>
           <Chip label="Production Countries" className={classes.chip} color="primary" />
         </li>
@@ -77,7 +86,13 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
             <Chip label={productionCountries.name} className={classes.chip} />
           </li>
         ))}
+        <Link to={`/movies/recommendations/${movie.id}`}>
+       <Button variant="outlined" startIcon={<MovieIcon />} color="secondary">
+          Similar Movies
+       </Button>
+       </Link>
         </Paper>
+
 
         <Fab
         color="secondary"
@@ -91,6 +106,9 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
       <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
         <MovieReviews movie={movie} />
       </Drawer>
+      {/* <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
+        <RecommendationsPage movie={movie} />
+      </Drawer> */}
     </>
   );
 };
