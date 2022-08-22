@@ -58,32 +58,32 @@ After cloning the repo, :-
 
 2. Favourites
 
-![ ](./images/FavouriteMovies.png)
+![ ](src/images/FavouriteMovies.png)
 
 3. Upcoming Movies
 
-![ ](./images/UpcomingMovies.png)
+![ ](src/images/UpcomingMovies.png)
 
 4. My Playlist 
 
-![ ](./images/PlaylistMovies.png)
+![ ](src/images/PlaylistMovies.png)
 
 5. Popular Movies
 
-![ ](./images/PopularMovies.png)
+![ ](src/images/PopularMovies.png)
 
 6. Similar Movies / Recommendation Movies
 
-![ ](./images/more_info.png)
+![ ](src/images/more_info.png)
 
-![ ](./images/SimilarMovies.png)
+![ ](src/images/SimilarMovies.png)
 
 7. Movie Cast
 
-![ ](./images/more_info.png)
+![ ](src/images/more_info.png)
 
 <!-- NEED TO UPDATE -->
-![ ](./images/Cast.png)
+![ ](src/images/Cast.png)
 
 
 ### Routing.
