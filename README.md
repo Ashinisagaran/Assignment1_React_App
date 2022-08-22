@@ -9,8 +9,8 @@ This project is about react act app for Movie App database
 ### Features.
  
 + Contains popular movies pages which shows movies that are trending
-+ contains recommendation pages when user click on more info of the the movies in homepage or upcoming movies, there will be a button called "Similiar Movies" below the overview.
-+ Contains casts info when the button is selected, also located below the Overview section.
++ Contains recommendation pages when user click on more info of the the movies in homepage or upcoming movies, there will be a button called "Similiar Movies" below the overview.
++ Contains casts info, shows up when user clicks onmore info, the cast is below the overview of the selected movie.
 + Contains pagination for the main pages like Homes Page, Upcoming Movies Page, Popular Movies Page, Recommendation Page.
 
 ## Setup requirements.
