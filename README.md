@@ -19,7 +19,7 @@ This project is about react act app for Movie App database
 
 After cloning the repo, :-
 
-1. run 'npm insatll'
+1. run 'npm install'
 
 2. Collect your API key from TMDB, and change the API key in '.env' file of the code. You should change you API key at this line of code -> 'REACT_APP_TMDB_KEY'.
 
@@ -29,7 +29,6 @@ After cloning the repo, :-
 
 [ List the __additional__ TMDB endpoints used, giving the description and pathname for each one.] 
 
-e.g.
 + Discover list of movies - discover/movie
 + Movie details - movie/:id
 + Movie genres = /genre/movie/list
