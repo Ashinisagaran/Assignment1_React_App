@@ -54,7 +54,6 @@ e.g.
 
 1. HomePage = Home
 
-<img width="1436" alt="HomePage.png" src="./images/HomePage.png">
 ![ ](./images/HomePage.png)
 
 2. Favourites
