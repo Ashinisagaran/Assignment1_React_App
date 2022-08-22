@@ -108,7 +108,7 @@ export const getMovie = (args) => {
     const [, idPart, page] = args.queryKey;
     const { id } = idPart;
     return fetch(
-       `https://api.themoviedb.org/3/person/${id}?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=${page}`
+       `https://api.themoviedb.org/3/movie/${id}/credits?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=${page}`
         ).then((response) => {
           if (!response.ok) {
             throw new Error(response.json().message);

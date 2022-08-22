@@ -47,13 +47,14 @@ After cloning the repo, :-
 [ Insert a screenshot from the Storybook UI that lists all the stories for the app's components, and highlight those relating to your __new/modified components__ - see the example screenshot below.] .......
 
 ![](./images/storybook.png)
+
 ### UI Design.
 
 [ Insert screenshots of the __new/modified app pages__ you developed (and modified existing pages), Include an appropriate caption for each one (see example below).
 
 1. HomePage = Home
 
-![ ](./images/HomePage.png)
+![ ](src/images/HomePage.png)
 
 2. Favourites
 
