@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import PageTemplate from '../components/templateMovieListPage';
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
 import { getUpcomingMovies } from "../api/tmdb-api";
 import AddToPlaylistIcon from "../components/cardIcons/playlistAdd";
+import { Pagination } from '@mui/material';
 
 const UpcomingMoviesPage = (props) => {
-  const {  data, error, isLoading, isError }  = useQuery("upcomingMovies", getUpcomingMovies)
+  const [page, setPage] = useState(1);
+  const {  data, error, isLoading, isError }  = useQuery(["upcomingMovies", page] , getUpcomingMovies)
 
   if (isLoading) {
         return <Spinner />
@@ -16,6 +18,7 @@ const UpcomingMoviesPage = (props) => {
         return <h1>{error.message}</h1>
       }  
       const movies = data.results;
+      const totalPages = data.total_pages;
 
       // Redundant, but necessary to avoid app crashing.
       const playlist = movies.filter(m => m.playlists)
@@ -23,6 +26,7 @@ const UpcomingMoviesPage = (props) => {
      const addToPlaylist = (movieId) => true 
     
       return (
+        <>
         <PageTemplate
           title="Upcoming Movies"
           movies={movies}
@@ -34,6 +38,8 @@ const UpcomingMoviesPage = (props) => {
             );
           }}
         />
+        <Pagination size="large" count={totalPages} page={page} onChange={(event, newPageNum) => setPage(newPageNum)} />
+        </>
     );
     };
 

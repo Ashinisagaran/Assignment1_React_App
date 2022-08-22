@@ -75,9 +75,12 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
       </Paper>
 
       <Paper component="ul" className={classes.root}>
+        {/* CAST ID INSTEAD OF MOVIE */}
+      <Link to={`/movies/cast/:id`}> 
         <Button variant="outlined" startIcon={<GroupIcon />} color="secondary">
           Movie Cast
         </Button>
+      </Link>
         <li>
           <Chip label="Production Countries" className={classes.chip} color="primary" />
         </li>
@@ -106,9 +109,6 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
       <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
         <MovieReviews movie={movie} />
       </Drawer>
-      {/* <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
-        <RecommendationsPage movie={movie} />
-      </Drawer> */}
     </>
   );
 };
