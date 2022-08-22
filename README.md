@@ -59,7 +59,7 @@ e.g.
 2. Favourites
 
 ![ ](./images/FavouriteMovies.png)
-s
+
 3. Upcoming Movies
 
 ![ ](./images/UpcomingMovies.png)
