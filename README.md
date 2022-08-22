@@ -80,8 +80,6 @@ After cloning the repo, :-
 
 7. Movie Cast
 
-![ ](src/images/more_info.png)
-
 <!-- NEED TO UPDATE -->
 ![ ](src/images/Cast.png)
 

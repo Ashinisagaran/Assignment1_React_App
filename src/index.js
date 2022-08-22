@@ -47,9 +47,7 @@ const App = () => {
         <Route exact path="/movies/playlist" component={PlaylistMoviesPage} />
         {/* New */}
         <Route exact path="/movies/popular" component={PopularMoviesPage} /> 
-        <Route exact path="/movies/cast/:id" component={CastPage} />
         <Route path="/movies/recommendations/:id" component={RecommendationsPage} />
-
         <Route path="/movies/:id" component={MoviePage} />
         <Route exact path="/" component={HomePage} />
         <Redirect from="*" to="/" />
