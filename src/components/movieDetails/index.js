@@ -91,7 +91,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
         ))}
         <Link to={`/movies/recommendations/${movie.id}`}>
        <Button variant="outlined" startIcon={<MovieIcon />} color="secondary">
-          Similar Movies
+          Recommended Movies
        </Button>
        </Link>
         </Paper>

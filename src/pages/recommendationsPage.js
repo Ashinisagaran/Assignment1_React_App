@@ -33,7 +33,7 @@ const RecommendationsPage = (props) => {
       return (
         <>
         <PageTemplate
-          title="Similar Movies"
+          title="Recommended Movies"
           movies={movies}
           action={(movie) => {
             return (
