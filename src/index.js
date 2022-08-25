@@ -10,7 +10,6 @@ import MovieReviewPage from "./pages/movieReviewPage";
 import UpcomingMoviesPage from "./pages/upcomingMoviesPage";
 import PlaylistMoviesPage from "./pages/playlistMoviesPage";
 import PopularMoviesPage from "./pages/popularMoviesPage";
-import CastPage from "./pages/castPage";
 import RecommendationsPage from "./pages/recommendationsPage";
 
 

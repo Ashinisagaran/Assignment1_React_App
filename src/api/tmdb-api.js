@@ -104,6 +104,21 @@ export const getMovie = (args) => {
             });
           };
 
+export const getTopRatedMovies = (args) => {
+ const [, page] = args.queryKey;
+    return fetch(
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=${page}`
+     ).then((response) => {
+     if (!response.ok) {
+      throw new Error(response.json().message);
+     }
+     return response.json();
+     })
+     .catch((error) => {
+      throw error
+    });
+    };
+
   export const getCast = (args) => {
     const [, idPart] = args.queryKey;
     const { id } = idPart;
