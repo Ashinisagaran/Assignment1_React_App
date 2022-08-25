@@ -9,6 +9,7 @@ This project is about react act app for Movie App database
 ### Features.
  
 + Contains popular movies pages which shows movies that are trending
++ Contains top rated movies pages which shows movies that are rated high
 + Contains recommendation pages when user click on more info of the the movies in homepage or upcoming movies, there will be a button called "Similiar Movies" below the overview.
 + Contains casts info, shows up when user clicks onmore info, the cast is below the overview of the selected movie.
 + Contains pagination for the main pages like Homes Page, Upcoming Movies Page, Popular Movies Page, Recommendation Page.
@@ -36,7 +37,8 @@ After cloning the repo, :-
 + Movie Reviews = /movie/{movie_id}/reviews
 + Upcoming Movies = /movie/upcoming
 <!-- NEW -->
-+ Trending Movies = /trending/movie/day
++ Popular Movies = /trending/movie/day
++ Top Rated Movies = /movie/top_rated
 + Movie Recommendation = /movie/{movie_id}/recommendations
 + Movie Cast = /movie/{movie_id}/credits 
 
@@ -72,13 +74,17 @@ After cloning the repo, :-
 
 ![ ](src/images/PopularMovies.png)
 
-6. Similar Movies / Recommendation Movies
+6. Top Rated Movies
+
+![ ](src/images/Top_Rated_Movies.png)
+
+7. Similar Movies / Recommendation Movies
 
 ![ ](src/images/more_info.png)
 
 ![ ](src/images/SimilarMovies.png)
 
-7. Movie Cast
+8. Movie Cast
 
 ![ ](src/images/Cast.png)
 
@@ -95,6 +101,7 @@ After cloning the repo, :-
 + /movies/playlist - PlaylistMoviesPage
 <!-- NEW -->
 + /movies/popular - PopularMoviesPage
++ /movies/top_rated - TopRatedMoviesPage
 + /movies/cast/:id - CastPage
 + /movies/recommendations/:id - RecommendationsPage
 
